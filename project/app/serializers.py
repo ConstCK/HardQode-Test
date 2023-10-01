@@ -74,24 +74,4 @@ class StatisticSerializer(serializers.ModelSerializer):
         all_users = UserProfile.objects.all().count()
         return int(users/(all_users/100))
 
-# class AccessSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Access
-#         fields = "__all__"
 
-# class LessonViewSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = LessonView
-#         fields = "__all__"
-#
-#
-# class OwnerSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Owner
-#         fields = "__all__"
-#
-#
-# class UserProfileSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = UserProfile
-#         fields = "__all__"
